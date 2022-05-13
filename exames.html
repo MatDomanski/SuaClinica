@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Login</title>
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,200&display=swap" rel="stylesheet">
     <!-- Fim google fonts -->
-
 
     <!-- Bootstrap 4 -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -28,7 +27,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Fim Bootstrap 4 -->
 
-    <link rel="stylesheet" href="css/style_home.css">
+    <link rel="stylesheet" href="css/style_exame.css">
 </head>
 
 <body>
@@ -81,87 +80,47 @@
                     <a class="nav-link" href="#"><b> Medicos</b></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><b> Home</b></a>
+                    <a class="nav-link" href="home.html"><b> Home </b></a>
                 </li>
             </ul>
         </div>
     </nav>
     <!-- fim navbar -->
 
-    <!-- inicio container principal -->
-    <div class="containePrincipal">
-        <div class="bem">
-            <p class="bemVindo"><b> Bem Vindo(a)</b></p>
+    <!-- container Principal -->
+    <div class="cont_principal">
+
+        <!-- div login -->
+        <div class="login">
+
+            <form>
+                <h1>Buscar Exame</h1>
+                <select id="regiao" class="form-select form-select-lg mb-2 col-12" aria-label=".form-select-sm example">
+                    <option selected>Selecione sua região</option>
+                    <option value="1">Viamão</option>
+                    <option value="2">Porto Alegre</option>
+                    <option value="3">Alvorada</option>
+                </select>
+
+                <select id="regiao" class="form-select form-select-lg mb-2 col-12" aria-label=".form-select-sm example">
+                    <option selected>Escolha um Exame</option>
+                    <option value="1">Raio x</option>
+                    <option value="2">Exame de urina</option>
+                    <option value="3">Cardiologia</option>
+                </select>
+                <input type="date">
+                
+
+                    <button onclick=""  class="btnLogin">Buscar</button>
+                    <button class="btnLimpar">Limpar</button>    
+                    
+            </form>
+
         </div>
-        <p class="titulo1"> Melhores Clinicas</p>
-        <!-- inicio carrousel -->
-        <div id="carouselExampleIndicators" class="meucarrousel carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators ul">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/clinica1.jpg" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="letraCarrousel">Titulo</h5>
-                        <p class="letraCarrousel">Lorem Ipsum is simply dummy text of the printing and</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/clinica2.jpg" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="letraCarrousel">Titulo</h5>
-                        <p class="letraCarrousel">Lorem Ipsum is simply dummy text of the printing and</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/clinica3.jpg" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="letraCarrousel">Titulo</h5>
-                        <p class="letraCarrousel">Lorem Ipsum is simply dummy text of the printing and</p>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-        <!-- fim carrousel -->
-
-        <!-- Inicio mais procurados -->
-        <p class="titulo1">Mais procurados</p>
-
-        <div class="maisProcurados">
-
-            <div class="cardiologia">
-                <p><b>cardiologia </b></p>
-            </div>
-
-            <div class="exToque">
-                <p><b> Raio X </b></p>
-
-
-            </div>
-
-            <div class="colonoscopia">
-                <p><b>colonoscopia </b></p>
-            </div>
-
-            <div class="otorrino">
-                <p><b>otorrino </b></p>
-            </div>
-        </div>
-        <!-- fim mais procurados -->
+        <!-- Fim div login -->
 
     </div>
-    <!-- fim container principal -->
+    <!-- Fim container Principal -->
 
     <!-- inicio footer -->
     <div id="page-content">
